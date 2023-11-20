@@ -1,0 +1,189 @@
+<html>
+<head>
+<style>
+body {
+ color: white;
+ text-align: center;
+ font-size: 24px;
+ line-height: 3;
+}
+.text{
+float:left;
+margin-left:10px;
+margin-top:0px;
+}
+.text2{
+float:right;
+margin-right:10px;
+margin-top:0px;
+}
+.left{
+float:left;
+}
+.color{
+text-align:center;
+float:right;
+margin-right:20px;
+color:black;
+}
+.navbar {
+ overflow: hidden;
+ background-color: #333;
+ top: 0;
+ width: 100%;
+}
+.navbar a {
+ float: left;
+ display: block;
+ color: #f2f2f2;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+}
+.navbar p{
+ float: left;
+ display: block;
+ color: #f2f2f2;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 20px;
+}
+.navbar a:hover {
+ background: #ddd;
+ color: black;
+}
+.topnav-right {
+ float: right;
+}
+.gr_header { 
+grid-area: header;
+overflow: hidden;
+background-color: #333;
+position: fixed;
+top: 0;
+height:108px;
+width: 100%;
+}
+.gr_footer {
+ grid-area: footer;
+ background: #333;
+ }
+.gr_main { 
+grid-area: main;
+background: #fff;
+}
+.gr_left { 
+grid-area: left;
+ background: #fff;
+ }
+.gr_right { 
+grid-area: right;
+ background: #fff;
+ }
+.gr {
+ display: grid;
+ grid-template-areas: "header header header"
+ "main main main"
+ "left left left"
+ "right right right"
+"footer footer footer";
+ grid-template-columns: 100%;
+ grid-template-rows: 100px 
+ 1fr
+ 1fr
+ 1fr
+ 100px;
+ min-height: 100vh;
+}
+@media screen and (max-width: 600px) {
+ .gr {
+ grid-template-areas: "header"
+ "left"
+"main"
+"right"
+ "footer";
+ grid-template-columns: 100%;
+ grid-template-rows: 100px 
+ 50px 
+1fr
+50px 
+30px;
+ }
+}
+</style>
+
+</head>
+<body class="gr"> 
+ <header class="gr_header">
+ <div class="navbar">
+ <p>MARVEL</p>
+<div class="topnav-right">
+ <a href="#sp">Spider-Man</a>
+ <a href="#ir">Iron-Man</a>
+ <a href="#cp">Captain America</a>
+ <a href="#inf">Info</a>
+ </div>
+</div>
+ 
+ </header>
+ <hr>
+ <main class="gr_main" id="sp">
+ 
+ <p class="color"><img src="spider.png" alt="captain" width=20% height=40% class="left">Челове́к-пау́к (англ. Spider-Man), настоящее имя Пи́тер Бе́нджамин Па́ркер
+ (англ. Peter Benjamin Parker) — супергерой, появляющийся в комиксах издательства
+ Marvel Comics, созданный Стэном Ли и Стивом Дитко. С момента своего первого 
+ появления на страницах комикса Amazing Fantasy № 15 (рус. Удивительная фантазия
+ , август 1962) он стал одним из самых популярных супергероев. Ли и Дитко задумывали
+ персонажа как подростка-сироту, воспитанного дядей и тётей, совмещающего жизнь 
+ обычного студента и борца с преступностью. Человек-паук получил суперсилу, увеличенную
+ ловкость, «паучье чутьё», а также способность держаться на отвесных поверхностях 
+ и выпускать паутину из рук с использованием прибора собственного изобретения.
+До появления Человека-паука в 1960-х подростки в комиксах о супергероях обычно 
+были всего лишь их помощниками. Комиксы о Человеке-пауке разбили эти стереотипы
+, представив героем одинокого подростка, отвергаемого многими сверстниками[4]
+, у которого не было опытного наставника, как Стив Роджерс у Баки или Бэтмен
+ у Робина. После смерти своего дяди Бена ему пришлось самостоятельно узнавать,
+ что «с большой силой приходит и большая ответственность» (англ. With great 
+ power there must also come great responsibility).
+</p>
+ 
+ </main>
+ <hr>
+ <aside class="gr_left" id = "ir">
+ <p class="color"> <img src="iron.png" width=20% height=40% class="left">
+Железный человек
+ - супергеройская личность Энтони Эдварда "Тони" Старка,
+ бизнесмена и инженера, управляющего компанией Stark Industries.
+ Начиная свою карьеру производителя оружия, он попадает в плен в
+ зоне боевых действий, и его сердце серьезно повреждено шрапнелью.
+ Чтобы поддержать свое сердце и сбежать от похитителей, он создает
+ технологически усовершенствованную броню. После побега он продолжает
+ использовать броню как супергерой, создавая более совершенные модели,
+ которые наделяют его сверхчеловеческой силой, полетом, проецированием 
+ энергии и другими способностями. Персонаж использовался для изучения политических тем,
+ а действие ранних историй о Железном человеке происходило во времена холодной войны.
+ В более поздних историях рассматривались другие темы, такие как гражданские беспорядки,
+ технический прогресс, корпоративный шпионаж, алкоголизм и государственная власть. </p>
+ </aside>
+ <hr>
+ <aside class="gr_right" id = "cp">
+ <p class="color"><img src="captain.png" alt="captain" width=20% height=40% class="left">Первый Мститель, был отвергнут армией США во время Второй мировой войны из-за
+ многочисленных проблем со здоровьем. В конечном итоге он стал добровольцем в проекте Возрождение,
+ где получил Сыворотку Суперсолдата, разработанную доктором Абрахамом Эрскином. Сыворотка значительно
+ улучшила его хрупкое тело до пика человеческой телесности. Как Страж Свободы,вместе со своим
+ лучшим другом Баки Барнсом и Захватчиками,Роджерс и другие помогли союзникам выиграть войну,
+ но не раньше, чем он был потерян в море и заморожен во льду в состоянии анабиоза на десятилетия.
+ Он оттаял в современную эпоху, чтобы продолжить битву вместе со своими новыми союзниками - 
+ Мстителями.Кэп не лоялен ни одному политику или правительству и вместо этого поддерживает
+ "вечные принципы свободы, равенства и справедливости американской мечты".</p>
+ </aside>
+ <hr>
+ <footer class="gr_footer" id="inf">
+ 
+ <p class="text">SUBSCRIBE</p>
+ <p class="text2">super@heroes.ru</p>
+ </footer>
+</body>
+</html>
